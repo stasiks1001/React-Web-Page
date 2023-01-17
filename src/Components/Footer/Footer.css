@@ -1,0 +1,79 @@
+.footer {
+  display: block;
+  background-color: #101828;
+  margin-top: 50px;
+}
+.footer .inner_footer_div {
+  padding: 40px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 {
+  display: block;
+  text-align: left;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 .footer_div_1_1_1 {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 .footer_div_1_1_1 h4 {
+  color: #F2F4F7;
+  padding-bottom: 5px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 .footer_div_1_1_1 .fa_genderless {
+  height: 50px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 .footer_div_1_1_1 .fa_genderless:nth-child(1) {
+  color: #7F56D9;
+  opacity: 0.5;
+  position: relative;
+  left: 22px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 .footer_div_1_1_1 .fa_genderless:nth-child(2) {
+  color: #7F56D9;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_1 p {
+  color: #D0D5DD;
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_2 div ul {
+  text-align: left;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_2 div ul li {
+  list-style: none;
+  margin-right: 35px;
+  color: #D0D5DD;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_2 div ul li span {
+  background-color: #F2F4F7;
+  color: #1D2939;
+  border-radius: 40%;
+  font-weight: 500;
+  font-size: 10px;
+  padding: 3px 5px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_2 div h5 {
+  color: #98A2B3;
+  padding-left: 38px;
+}
+.footer .inner_footer_div .footer_div_1 .footer_div_1_2 .footer_div_1_2_second_pair_div_two {
+  margin-top: 43px;
+}
+.footer .inner_footer_div .footer_div_2 {
+  color: #98A2B3;
+  text-align: center;
+}
+.footer .inner_footer_div .footer_div_2 .footer_social_icons {
+  margin-top: 20px;
+  display: inline-flex;
+  gap: 20px;
+}/*# sourceMappingURL=Footer.css.map */

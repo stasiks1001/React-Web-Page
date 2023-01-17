@@ -1,0 +1,58 @@
+$white-purple-25:#FCFAFF;
+$white-purple-50:#F9F5FF;
+$white-purple-100:#F4EBFF;
+$white-purple-200:#E9D7FE;
+$white-purple-300:#D6BBFB;
+$white-purple-400:#B692F6;
+$white-purple-500:#9E77ED;
+$white-purple-600:#7F56D9;
+$white-purple-700:#6941C6;
+$white-purple-800:#42307D;
+$white-purple-900:#42309D;
+
+$white-black-25:#FCFCFD;
+$white-black-50:#F9FAFB;
+$white-black-100:#F2F4F7;
+$white-black-200:#EAECF0;
+$white-black-300:#D0D5DD;
+$white-black-400:#98A2B3;
+$white-black-500:#667085;
+$white-black-600:#475467;
+$white-black-700:#344054;
+$white-black-800:#1D2939;
+$white-black-900:#101828;
+
+// @media screen and (min-width: $tablet-size) {
+//   .wrapper {
+//     grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+//     justify-content: center;
+//   }
+
+//   .card {
+//     flex-direction: column;
+//     text-align: center;
+//     min-width: 14rem;
+   
+//     &__img {
+//       width: 100%;
+//       height: 12rem;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $tablet-size) {
+//   .wrapper {
+//     margin: 2rem;
+//     display: grid;
+//     gap: 1rem;
+//     grid-template-columns: 1fr;
+//     justify-content: center;
+//   }
+
+//   .card {
+//     box-shadow: 0 0 10px 5px $clr-gray300;
+//     border-radius: $radius;
+//     min-width: 28rem;
+//     display: flex;
+//   }
+// }

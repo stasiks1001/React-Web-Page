@@ -1,0 +1,129 @@
+@import "../../Styles/colorVariables";
+@import "../../querryBreakpoints";
+
+.tutors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+  margin: 0 auto; 
+  margin-top:5rem ;
+  .headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      margin: 1.5rem 0;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    h3 {
+      color: $white-purple-600;
+      font-weight: 600;
+    }
+    p {
+      width: 80%;
+      text-align: center;
+      font-size: 1.2rem;
+      opacity: 0.5;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    background-color: $white-black-100;
+    font-size: 1.4rem;
+    .tutors-card-inner {
+      padding:1rem;
+      margin: 1rem;
+      .image {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+      }
+      .rest-data {
+        text-align: center;
+        width:90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        h3{
+          font-weight: 102;
+          
+        }
+        p:nth-child(2){
+          color:$white-purple-700;
+        }
+        .content{
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          color: grey;
+          .icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.7rem;
+            opacity: 0.8;
+          }
+        }
+        p{
+          margin: 1rem;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .tutors{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .headers{
+      p{
+        font-size: 2rem;
+      }
+    }
+    .cards{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop-size) {
+  .tutors {
+    display: flex;   
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+   
+    .cards {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      .first-pair{
+        display: flex;
+        gap: 20px;
+      }
+      .second-pair{
+        display: flex;
+        gap: 20px;
+      }
+     ;
+    
+    }
+  }
+}

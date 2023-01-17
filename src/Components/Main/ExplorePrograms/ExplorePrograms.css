@@ -1,0 +1,97 @@
+.explore_programs {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explore_programs .explore_programs_card {
+  box-shadow: 0px 5px 5px 0px #D0D5DD;
+}
+.explore_programs .explore_programs_card .inner_div {
+  margin: 15px;
+}
+.explore_programs .explore_programs_card .image div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -200px;
+  left: 180px;
+  gap: 5px;
+  background-color: #EAECF0;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+}
+.explore_programs .explore_programs_card .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.explore_programs .explore_programs_card .rest_data {
+  margin-top: -30px;
+}
+.explore_programs .explore_programs_card .rest_data header {
+  font-weight: 700;
+  margin-top: -10px;
+}
+.explore_programs .explore_programs_card .rest_data .content p {
+  color: #667085;
+}
+.explore_programs .explore_programs_card .rest_data .content div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.explore_programs .explore_programs_card .rest_data .content div .stars {
+  color: rgb(248, 180, 8);
+}
+.explore_programs .explore_programs_card .rest_data .name_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.explore_programs .explore_programs_card .rest_data .name_price .name_price_first {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.explore_programs .explore_programs_card .rest_data .name_price .name_price_first div:nth-child(2) {
+  width: 50%;
+}
+.explore_programs .explore_programs_card .rest_data .name_price .name_price_second {
+  font-weight: 700;
+  font-size: 22px;
+  color: #7F56D9;
+}
+.explore_programs .three_dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.explore_programs .three_dots div:nth-child(1) {
+  width: 35px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #9E77ED;
+}
+.explore_programs .three_dots div:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #98A2B3;
+}
+.explore_programs .three_dots div:nth-child(3) {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #98A2B3;
+}
+.explore_programs button {
+  width: 40%;
+  height: 25px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+}/*# sourceMappingURL=ExplorePrograms.css.map */

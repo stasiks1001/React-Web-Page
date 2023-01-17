@@ -1,0 +1,43 @@
+.tutors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.tutors div:nth-child(1) {
+  text-align: left;
+}
+.tutors div:nth-child(1) h3 {
+  color: #9E77ED;
+}
+.tutors div:nth-child(1) p {
+  color: #667085;
+}
+.tutors .tutors_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 330px;
+  margin: 0 auto;
+  background-color: #F2F4F7;
+}
+.tutors .tutors_card .tutors_card_inner {
+  padding: 20px;
+}
+.tutors .tutors_card .tutors_card_inner .image {
+  display: flex;
+  justify-content: center;
+}
+.tutors .tutors_card .tutors_card_inner img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tutors .tutors_card .tutors_card_inner .rest_data {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}/*# sourceMappingURL=Tutors.css.map */

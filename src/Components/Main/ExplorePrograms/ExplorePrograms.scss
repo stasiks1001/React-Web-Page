@@ -1,0 +1,214 @@
+@import "../../Styles/colorVariables";
+@import "../../querryBreakpoints";
+
+.explore-programs {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h3 {
+      color: $white-purple-500;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 2rem 0;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    margin: 50px 0;
+    .card {
+      box-shadow: 0px 5px 5px 2px $white-black-300;
+      border-radius: 0px 0px 10px 10px;
+      width: 31.25%;
+      min-width: 300px;
+      height: auto;
+      border: none;
+      background-color: white;
+      color: $white-black-200;
+      border-radius: 10px;
+      flex-wrap: wrap;
+
+      font-size: 1.2rem;
+      .inner-div {
+        margin: 15px;
+      }
+      .image {
+        height: 250px;
+        color: $white-black-700;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: -240px;
+          left: calc(53% - 20px);
+          gap: 5px;
+          background-color: $white-black-200;
+          max-width: 50%;
+          height: 40px;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+      }
+      .rest-data {
+        margin-top: 40px;
+        .arrow-icon {
+          position: relative;
+          left: 92%;
+          top: -40px;
+          font-size: 2rem;
+          opacity: 1;
+          color: black;
+          opacity: 0.8;
+        }
+        h5 {
+          font-size: 1rem;
+          color: #9e77ed;
+          margin-bottom: 2rem;
+        }
+        h1 {
+          font-weight: 700;
+          margin-top: -10px;
+          font-size: 1.8rem;
+          opacity: 1;
+          color: black;
+        }
+        .content p {
+          color: $white-black-500;
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+        .stars-container {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 10px;
+          .stars {
+            display: flex;
+            gap: .4rem;
+            color: rgb(253, 182, 0);
+            font-size: 1rem;
+          }
+        }
+        .card-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .image-names {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .small-bottom-image img {
+              width: 60px;
+              height: 55px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            div:nth-child(2) {
+              font-size: 1.2rem;
+              width: 50%;
+              color: black;
+              p {
+                opacity: 0.7;
+                span {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+          .price {
+            font-weight: 700;
+            font-size: 2.6rem;
+            color: $white-purple-600;
+          }
+        }
+      }
+    }
+  }
+
+  .three-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    div:nth-child(1) {
+      width: 2.7rem;
+      height: 0.7rem;
+      border-radius: 10px;
+      background-color: $white-purple-500;
+    }
+    div:nth-child(2) {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background-color: $white-black-400;
+    }
+    div:nth-child(3) {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background-color: $white-black-400;
+    }
+  }
+  button {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: $white-black-100;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      background-color: black;
+      color: $white-black-100;
+      border: 1px solid black;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .explore-programs {
+    .headers {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+    }
+    .cards {
+      .card {
+        min-width: 400px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,60 @@
+.ourServices {
+  margin: 0 auto;
+  width: 95%;
+  text-align: left;
+}
+.ourServices h4 {
+  color: #9E77ED;
+}
+.ourServices .our_services_card {
+  margin: 50px 0 50px 0;
+  border: 1px solid #6941C6;
+  background-color: #6941C6;
+  color: #EAECF0;
+  border-radius: 10px;
+}
+.ourServices .our_services_card .inner_div {
+  margin: 30px;
+  text-align: left;
+}
+.ourServices .our_services_card .inner_div .icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.ourServices .our_services_card .inner_div h4 {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  text-align: left;
+}
+.ourServices .our_services_card .inner_div h4 p {
+  font-weight: 100;
+}
+.ourServices .three_dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  gap: 10px;
+}
+.ourServices .three_dots div:nth-child(1) {
+  width: 35px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #9E77ED;
+}
+.ourServices .three_dots div:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #98A2B3;
+}
+.ourServices .three_dots div:nth-child(3) {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #98A2B3;
+}/*# sourceMappingURL=OurServices.css.map */

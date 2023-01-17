@@ -1,0 +1,419 @@
+@import "../../Styles/colorVariables";
+@import "../../querryBreakpoints";
+$distanceWidth: 1;
+
+.our-recent-blogs {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  h1 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    h3 {
+      color: $white-purple-500;
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 1.5rem;
+      opacity: 0.8;
+      margin: 1.5rem 0;
+      line-height: 2.2rem;
+    }
+    .cards--first-and-second {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      .first--second-card-inner-div {
+        max-width: 300px;
+        .first-card {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+        }
+        .second-card {
+          display: flex;
+          min-width: 300px;
+          height: auto;
+          flex-direction: column;
+        }
+        .image {
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .rest-card-data {
+          .buttons {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+            button {
+              font-size: 1.5rem;
+            }
+            button:nth-child(1) {
+              border-radius: 20px;
+              background-color: rgb(251, 228, 232);
+              color: rgb(255, 94, 121);
+              border: none;
+            }
+            button:nth-child(2) {
+              color: rgb(6, 120, 6);
+              border-radius: 20px;
+              background-color: rgb(228, 254, 228);
+              border: none;
+            }
+          }
+        }
+      }
+    }
+    .cards--third {
+      max-width: 500px;
+      .image {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .cards-third--rest-card-data {
+        h3 {
+          margin-top: 2rem;
+        }
+        .buttons {
+          margin-bottom: 10px;
+          display: flex;
+          gap: 10px;
+          @if $distanceWidth <= 400px {
+            flex-wrap: wrap;
+          }
+          button {
+            font-size: 1.5rem;
+          }
+          button:nth-child(1) {
+            border-radius: 20px;
+            background-color: rgb(251, 228, 232);
+            color: rgb(255, 94, 121);
+            border: none;
+          }
+          button:nth-child(2) {
+            color: rgb(6, 120, 6);
+            border-radius: 20px;
+            background-color: rgb(228, 254, 228);
+            border: none;
+          }
+          button:nth-child(3) {
+            border-radius: 20px;
+            background-color: rgb(251, 228, 232);
+            color: rgb(255, 94, 121);
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet-size) {
+  .our-recent-blogs {
+    h1 {
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      h3 {
+        color: $white-purple-500;
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 1.5rem;
+        opacity: 0.8;
+        margin: 1.5rem 0;
+      }
+      .cards--first-and-second {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .first--second-card-inner-div {
+          display: flex;
+          gap: 1rem;
+          max-width: 100%;
+
+          .first-card {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+          }
+          .second-card {
+            display: flex;
+            min-width: 300px;
+            height: auto;
+            flex-direction: column;
+          }
+          .image {
+            display: flex;
+            flex-direction: column;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .rest-card-data {
+            .buttons {
+              margin-bottom: 10px;
+              display: flex;
+              gap: 10px;
+              button {
+                font-size: 1.5rem;
+              }
+              button:nth-child(1) {
+                border-radius: 20px;
+                background-color: rgb(251, 228, 232);
+                color: rgb(255, 94, 121);
+                border: none;
+              }
+              button:nth-child(2) {
+                color: rgb(6, 120, 6);
+                border-radius: 20px;
+                background-color: rgb(228, 254, 228);
+                border: none;
+              }
+            }
+          }
+        }
+      }
+      .cards--third {
+        max-width: 700px;
+        .image {
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .cards-third--rest-card-data {
+          h3 {
+            margin-top: 2rem;
+          }
+          .buttons {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+            @if $distanceWidth <= 400px {
+              flex-wrap: wrap;
+            }
+            button {
+              font-size: 1.5rem;
+            }
+            button:nth-child(1) {
+              border-radius: 20px;
+              background-color: rgb(251, 228, 232);
+              color: rgb(255, 94, 121);
+              border: none;
+            }
+            button:nth-child(2) {
+              color: rgb(6, 120, 6);
+              border-radius: 20px;
+              background-color: rgb(228, 254, 228);
+              border: none;
+            }
+            button:nth-child(3) {
+              border-radius: 20px;
+              background-color: rgb(251, 228, 232);
+              color: rgb(255, 94, 121);
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $laptop-size) {
+  .our-recent-blogs {
+    .cards {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: start;
+      h3 {
+        color: $white-purple-500;
+        font-size: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 1.3rem;
+        opacity: 0.8;
+        margin: 1.5rem 0;
+        line-height: 2.2rem;
+      }
+      .cards--first-and-second {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.2rem;
+
+        .first-card {
+          display: flex;
+          width: 100%;
+          gap: 1rem;
+          .image {
+            width: 25vw;
+            height: 25vh;
+            max-width: 500px;
+            max-height: 500px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .rest-card-data {
+            max-width: 400px;
+            .buttons {
+              margin-bottom: 10px;
+              display: flex;
+              gap: 10px;
+              button {
+                font-size: 1.5rem;
+              }
+              button:nth-child(1) {
+                border-radius: 20px;
+                background-color: rgb(251, 228, 232);
+                color: rgb(255, 94, 121);
+                border: none;
+              }
+              button:nth-child(2) {
+                color: rgb(6, 120, 6);
+                border-radius: 20px;
+                background-color: rgb(228, 254, 228);
+                border: none;
+              }
+            }
+          }
+        }
+        .second-card {
+          display: flex;
+          width: 100%;
+          gap: 1rem;
+          .image {
+            width: 25vw;
+            height: 25vh;
+            max-width: 500px;
+            max-height: 500px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .rest-card-data {
+            max-width: 400px;
+            .buttons {
+              margin-bottom: 10px;
+              display: flex;
+              gap: 10px;
+              button {
+                font-size: 1.5rem;
+              }
+              button:nth-child(1) {
+                border-radius: 20px;
+                background-color: rgb(251, 228, 232);
+                color: rgb(255, 94, 121);
+                border: none;
+              }
+              button:nth-child(2) {
+                color: rgb(6, 120, 6);
+                border-radius: 20px;
+                background-color: rgb(228, 254, 228);
+                border: none;
+              }
+            }
+          }
+        }
+      }
+      .cards--third {
+        width: 100%;
+        max-width: 1000px;
+        .image {
+          width: 42vw;
+          height: 30vh;
+          max-width: 1000px;
+          max-height: 600px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .cards-third--rest-card-data {
+          h3 {
+            margin-top: 2rem;
+          }
+          .buttons {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+            @if $distanceWidth <= 400px {
+              flex-wrap: wrap;
+            }
+            button {
+              font-size: 1.5rem;
+            }
+            button:nth-child(1) {
+              border-radius: 20px;
+              background-color: rgb(251, 228, 232);
+              color: rgb(255, 94, 121);
+              border: none;
+            }
+            button:nth-child(2) {
+              color: rgb(6, 120, 6);
+              border-radius: 20px;
+              background-color: rgb(228, 254, 228);
+              border: none;
+            }
+            button:nth-child(3) {
+              border-radius: 20px;
+              background-color: rgb(251, 228, 232);
+              color: rgb(255, 94, 121);
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
